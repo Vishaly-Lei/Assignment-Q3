@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ordinary Differential Equation</title>
+</head>
+<body bgcolor="Lavender">
+	<p><center>
+		<font size="5"><nav>
+		<a style="text-decoration: none" href="index.html"> HOME</a>
+		<a style="text-decoration: none" href="History.html"> HISTORY</a>
+		<a style="text-decoration: none" href="Application and examples of ODE.html"> APPLICATIONS</a>
+		<a style="text-decoration: none" href="Table.html"> TABLE</a>
+        <a style="text-decoration: none" href="Mathematicians.html">  MATHEMATICIANS</a>
+		<a style="text-decoration: none" href="Books.html"> BOOKS</a>
+		<a style="text-decoration: none" href="Contact.html"> CONTACT</a>
+	</nav></font>
+	</center></p>
+	<font size = "6">
+	<b><p>Ordinary differential equation</p> </b>
+      <p>In mathematics, an<b> ordinary differential equation (ODE)</b> is a differential equation whose unknown(s) consists of one (or more) function(s) of one variable and involves the derivatives of those functions.The term ordinary is used in contrast with the term partial differential equation which may be with respect to more than one independent variable.</p>
+<b><p> Differential equations</p></b>
+<p>A linear differential equation is a differential equation that is defined by a linear polynomial in the unknown function and its derivatives, that is an equation of the form</p>
+<p>a<sub>0</sub>(x)y+a<sub>1</sub>(x)y<sup>`</sup>+a<sub>2</sub>(x)y<sup>``</sup>+...+a<sub>n</sub>(x)y<sup>(n)</sup>+b(x)=0,</p>
+
+<p>where a<sub>0</sub>(x),...,a<sub>n</sub>(x)and b(x) are arbitrary differentiable functions that do not need to be linear, and y<sup>`</sup>,...,y<sup>(n)</sup> are the successive derivatives of the unknown function y of the variable x.</p>
+
+<p>Among ordinary differential equations, linear differential equations play a prominent role for several reasons. Most elementary and special functions that are encountered in physics and applied mathematics are solutions of linear differential equations (see Holonomic function). When physical phenomena are modeled with non-linear equations, they are generally approximated by linear differential equations for an easier solution. The few non-linear ODEs that can be solved explicitly are generally solved by transforming the equation into an equivalent linear ODE (see, for example Riccati equation).</p>
+
+<p>Some ODEs can be solved explicitly in terms of known functions and integrals. When that is not possible, the equation for computing the Taylor series of the solutions may be useful. For applied problems, numerical methods for ordinary differential equations can supply an approximation of the solution.</p>
+
+<p>A simple example is Newton's second law of motion — the relationship between the displacement x and the time t of an object under the force F, is given by the differential equation</p>
+
+md<sup>2</sup>x(t)&frasl;dt<sup>2</sup>=F(x(t))
+<p>which constrains the motion of a particle of constant mass m. In general, F is a function of the position x(t) of the particle at time t. The unknown function x(t) appears on both sides of the differential equation, and is indicated in the notation F(x(t))</p>
+<p><b>Definition</b></p>
+<p>In what follows, let y be a dependent variable and x an independent variable, and y = f(x) is an unknown function of x. The notation for differentiation varies depending upon the author and upon which notation is most useful for the task at hand. In this context, the Leibniz's notation (dy&frasl;dx,d<sup>2</sup>&frasl;dx<sup>2</sup>,...,d<sup>n</sup>y&frasl;dx<sup>n</sup>)
+ is more useful for differentiation and integration, whereas Lagrange's notation (y<sup>′</sup>, y<sup>′′<?, …, y<sup>(n)</sup>) is more useful for representing derivatives of any order compactly, and Newton's notation (y<sup>.</sup>,y<sup>..</sup>,y<sup>...</sup> is often used in physics for representing derivatives of low order with respect to time.</p>
+   <p><b> General definition</b></p>
+<p>Given F, a function of x, y, and derivatives of y. Then an equation of the form</p>
+<p>F(x,y,y<sup>`</sup>,...,y<sup>(n-1)</sup> =y<sup>(n)</sup></p>
+<p>is called an explicit ordinary differential equation of order n.</p>
+<p>More generally, an implicit ordinary differential equation of order n takes the form:</p>
+<p>F(x,y,y<sup>`</sup>,...,y<sup>(n)</sup>) =0</p>
+<p>There are further classifications:</p>
+
+<i><li>Autonomous</li></i>
+
+<p>A differential equation not depending on x is called autonomous.</p>
+
+<i><li>Linear</li></i>
+
+<p>A differential equation is said to be linear if F can be written as a linear combination of the derivatives of y:</p>
+<p>y<sup>(n)</sup> = Sum(i=0 to n-1) a<sub>i</sub>(x)y<sup>(i)</sup>r(x) </p>
+<p>where a<sub>i</sub>(x) and r(x) are continuous functions of x. The function r(x) is called the source term, leading to two further important classifications:</p>
+
+<i><li>>Homogeneous</li></i>
+
+<p>If r(x) = 0, and consequently one "automatic" solution is the trivial solution, y = 0. The solution of a linear homogeneous equation is a complementary function, denoted here by y<sub>c</sub>.</p>
+
+<i><li>Nonhomogeneous (or inhomogeneous)</li></i>
+
+<p>If r(x) ≠ 0. The additional solution to the complementary function is the particular integral, denoted here by y<sub>p</sub>.</p>
+
+<i><li>Non-linear</li></i>
+
+<p>A differential equation that cannot be written in the form of a linear combination.</p>
+
+<p><b>Theories</b></p>
+
+<i><li>Singular solutions</li></i>
+
+<p>The theory of singular solutions of ordinary and partial differential equations was a subject of research from the time of Leibniz, but only since the middle of the nineteenth century has it received special attention. A valuable but little-known work on the subject is that of Houtain (1854). Darboux (from 1873) was a leader in the theory, and in the geometric interpretation of these solutions he opened a field worked by various writers, notably Casorati and Cayley. To the latter is due (1872) the theory of singular solutions of differential equations of the first order as accepted circa 1900.</p>
+
+<i><li>Reduction to quadratures</li></i>
+
+<p>The primitive attempt in dealing with differential equations had in view a reduction to quadratures. As it had been the hope of eighteenth-century algebraists to find a method for solving the general equation of the nth degree, so it was the hope of analysts to find a general method for integrating any differential equation. Gauss (1799) showed, however, that complex differential equations require complex numbers. Hence, analysts began to substitute the study of functions, thus opening a new and fertile field. Cauchy was the first to appreciate the importance of this view. Thereafter, the real question was no longer whether a solution is possible by means of known functions or their integrals, but whether a given differential equation suffices for the definition of a function of the independent variable or variables, and, if so, what are the characteristic properties.</p>
+
+<i><li>Fuchsian theory</li></i>
+
+<p><i>Main article</i>: Frobenius method</p>
+<p>Two memoirs by Fuchs[21] inspired a novel approach, subsequently elaborated by Thomé and Frobenius. Collet was a prominent contributor beginning in 1869. His method for integrating a non-linear system was communicated to Bertrand in 1868. Clebsch (1873) attacked the theory along lines parallel to those in his theory of Abelian integrals. As the latter can be classified according to the properties of the fundamental curve that remains unchanged under a rational transformation, Clebsch proposed to classify the transcendent functions defined by differential equations according to the invariant properties of the corresponding surfaces f = 0 under rational one-to-one transformations.</p>
+
+<i><li>Lie's theory</li></i>
+
+<p>From 1870, Sophus Lie's work put the theory of differential equations on a better foundation. He showed that the integration theories of the older mathematicians can, using Lie groups, be referred to a common source, and that ordinary differential equations that admit the same infinitesimal transformations present comparable integration difficulties. He also emphasized the subject of transformations of contact.</p>
+<p>Lie's group theory of differential equations has been certified, namely: (1) that it unifies the many ad hoc methods known for solving differential equations, and (2) that it provides powerful new ways to find solutions. The theory has applications to both ordinary and partial differential equations.</p>
+<p>A general solution approach uses the symmetry property of differential equations, the continuous infinitesimal transformations of solutions to solutions (Lie theory). Continuous group theory, Lie algebras, and differential geometry are used to understand the structure of linear and non-linear (partial) differential equations for generating integrable equations, to find its Lax pairs, recursion operators, Bäcklund transform, and finally finding exact analytic solutions to DE.</p>
+<p>Symmetry methods have been applied to differential equations that arise in mathematics, physics, engineering, and other disciplines.</p>
+
+<i><li>Sturm–Liouville theory</li></i>
+<p><i>Main article</i>: Sturm–Liouville theory</p>
+<p>Sturm–Liouville theory is a theory of a special type of second order linear ordinary differential equation. Their solutions are based on eigenvalues and corresponding eigenfunctions of linear operators defined via second-order homogeneous linear equations. The problems are identified as Sturm-Liouville Problems (SLP) and are named after J.C.F. Sturm and J. Liouville, who studied them in the mid-1800s. SLPs have an infinite number of eigenvalues, and the corresponding eigenfunctions form a complete, orthogonal set, which makes orthogonal expansions possible. This is a key idea in applied mathematics, physics, and engineering.[23] SLPs are also useful in the analysis of certain partial differential equations.</p>
+<table>
+       <b> <caption>Existence and uniqueness of solutions</caption></b>
+        <thead>
+            <tr><th>Theorem</th><th>Assumption</th><th>Conclusion</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Peano existence theorem</td><td>F continuous</td><td>local existence only</td></tr><tr><td>Picard-Lindelof theorem</td><td>F Lipschitz continuous</td><td>Local existence and uniqueness </td></tr>
+        </tbody>
+    </table>
+
+  <p><b>Local existence and uniqueness theorem simplified</b></p>
+<p>The theorem can be stated simply as follows.[25] For the equation and initial value problem:</p>
+<p>y<sup>`</sup>=F(x,y), y<sub>0</sub>=y(x<sub>o</sub>)</p>
+<p>if F and dF&frasl;dy are continuous in a closed rectangle</p>
+<p>[x<sub>0</sub>-a,x<sub>0</sub>+a].[y<sub>0</sub>-b,y<sub>0</sub>+b]</p>
+<p>in the x-y plane, where a and b are real (symbolically: a, b belongs to R) and × denotes the Cartesian product, square brackets denote closed intervals, then there is an interval</p>
+<p>I = [x<sub>0</sub>-h,x<sub>0</sub>+h]C [x<sub>0</sub>,x<sub>0</sub>+a]</p>
+<p> for some h ∈ R where the solution to the above equation and initial value problem can be found. That is, there is a solution and it is unique. Since there is no restriction on F to be linear, this applies to non-linear equations that take the form F(x, y), and it can also be applied to systems of equations.</p>
+
+<b><p>Reduction of order</p></b>
+<p>Differential equations can usually be solved more easily if the order of the equation can be reduced.</p>
+<li><i>Reduction to a first-order system</i></li>
+<p>Any explicit differential equation of order n,</p>
+<p>F(x,y,y<sup>`</sup>,y<sup>``</sup>,...,y<sup>(n-1)</sup> )= y<sup>(n)</sup></p>
+<p>can be written as a system of n first-order differential equations by defining a new family of unknown functions</p>
+<p>y<sub>i</sub>y<sup>(i-1)</sup>. </p>
+<p>for i = 1, 2,..., n. The n-dimensional system of first-order coupled differential equations is then</p>
+<p>y<sup>`</sup>y<sup>`</sup><sub>1</sub>  = y<sub>2</sub></p>
+<p>y<sup>``</sup><sub>2</sub> = y<sub>3</sub></p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>y<sup>`</sup><sub>n-1</sub> = y<sub>n</sub></p>
+<p>y<sup>`</sup><sub>n</sub> = F(x,y<sub>1</sub> ,...,y<sub>n</sub>).
+    <p>more compactly in vector notation:</p>
+   <p> y<sup>`</sup> = F(x,y)</p>
+   where
+   <p>y =(y<sub>1</sub> ,...,y<sub>n</sub>),F(x,y<sub>1</sub> ,...,y<sub>n</sub>) = ( y<sub>2</sub>,...,y<sub>n</sub>F(x,y<sub>1</sub> ,...,y<sub>n</sub>) ) </p>
+
+<em><p><b>Summary of exact solutions</b></p></em>
+<p>Some differential equations have solutions that can be written in an exact and closed form. Several important classes are given here.</p>
+<p>In the table below, P(x), Q(x), P(y), Q(y), and M(x,y), N(x,y) are any integrable functions of x, y, and b and c are real given constants, and C1, C2, ... are arbitrary constants (complex in general). The differential equations are in their equivalent and alternative forms that lead to the solution through integration.</p>
+<p>In the integral solutions, λ and ε are dummy variables of integration (the continuum analogues of indices in summation), and the notation ∫x F(λ) dλ just means to integrate F(λ) with respect to λ, then after the integration substitute λ = x, without adding constants (explicitly stated).</p>
+
+<p><b>Separable equations</b></p>
+
+<table>
+        <thead>
+            <tr><th>Differential equation </th><th>Solution method</th><th>General solution</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>First-order, separable in x and y (general case, see below for special cases)
+                P<sub>1</sub>(x)Q<sub>1</sub>(y)+P<sub>2</sub>(x)Q<sub>2</sub>(y)dy&frasl;dx =0<p>P<sub>1</sub>(x)Q<sub>1</sub>(y)dx+P<sub>2</sub>(x)Q<sub>2</sub>(y)dy =0</p></td><td>Separation of variables (divide by P<sub>2</sub>Q<sub>1</sub>). </td><td>&#8747;<sup>x</sup>P<sub>1</sub>( λ)&frasl;P<sub>2</sub>(λ)dλ +&#8747;<sup>y</sup>Q<sub>2</sub>( λ)&frasl;Q<sub>1</sub>(λ)dλ=C </td></tr><tr><td>First-order, separable in x<p>dy&frasl;dx=F(x)</p><p>dy=F(x)dx</p> </td><td>Direct integration.</td><td>y = &#8747;<sup>x</sup>F(λ)dλ+C</td></tr><tr><td>First-order,autonomous,separable in y<p>dy&frasl;dx=F(y)</p><p>dy=F(y)dx</p> </td><td>Separation of variables (divide by F).</td><td>x= &#8747;<sup>y</sup>F(λ)dλ+C</td></tr>Separation of variables (divide by P<sub>2</sub>Q<sub>1</sub>). </td><td>&#8747;<sup>x</sup>P<sub>1</sub>( λ)&frasl;P<sub>2</sub>(λ)dλ +&#8747;<sup>y</sup>Q<sub>2</sub>( λ)&frasl;Q<sub>1</sub>(λ)dλ=C </td></tr><tr><td>First-order, separable in x and y 
+                P(y)dy&frasl;dx+Q(x)=0<p>P(y)dy+Q(x)dx =0</td><td>Integrate throughout </td><td>&#8747;<sup>y</sup>P( λ)dλ+&#8747;<sup>x</sup>Q(λ)=C </td></tr>
+        </tbody>
+    </table>
+<p><b>The guessing method</p></b>
+    <p>When all other methods for solving an ODE fail, or in the cases where we have some intuition about what the solution to a DE might look like, it is sometimes possible to solve a DE simply by guessing the solution and validating it is correct. To use this method, we simply guess a solution to the differential equation, and then plug the solution into the differential equation to validate if it satisfies the equation. If it does then we have a particular solution to the DE, otherwise we start over again and try another guess. For instance we could guess that the solution to a DE has the form: {\displaystyle y=Ae<sup>&#913t</sup> since this is a very common solution that physically behaves in a sinusoidal way.</p>
+    <p>In the case of a first order ODE that is non-homogeneous we need to first find a DE solution to the homogeneous portion of the DE, otherwise known as the characteristic equation, and then find a solution to the entire non-homogeneous equation by guessing. Finally, we add both of these solutions together to obtain the total solution to the ODE, that is:</p>
+    <p><b>total solution = homogeneous soution + particular solution</b></p>
+
+
+       <i><b> <p>Check out the <a href="https://en.wikipedia.org/wiki/Ordinary_differential_equation">
+Ordinary Differential Equation</a>.</p></b></i>
+</font>
+
+</body>
+</html>
