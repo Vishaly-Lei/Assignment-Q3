@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Some Table of ODE</title>
+</head>
+<body>
+	<body bgcolor="thistle">
+		<p><center>
+		<font size="5"><nav>
+		<a style="text-decoration: none" href="index.html"> HOME</a>
+		<a style="text-decoration: none" href="History.html"> HISTORY</a>
+		<a style="text-decoration: none" href="Application and examples of ODE.html"> APPLICATIONS</a>
+		<a style="text-decoration: none" href="Table.html"> TABLE</a>
+		<a style="text-decoration: none" href="Mathematicians.html">  MATHEMATICIANS</a>
+		<a style="text-decoration: none" href="Books.html"> BOOKS</a>
+		<a style="text-decoration: none" href="Contact.html"> CONTACT</a>
+	</nav></font>
+	</center></p>
+		<font size ="6">
+   <center>
+   	<table>
+   		<caption>General First-Order Equations </caption>
+   		<thead>
+   			<tr><th>Differential Equation </th><th>Solution Method</th><th>General Solution</th></tr>
+   		</thead>
+   		<tbody>
+   			<tr><td>First-order, homogeneous , dy&frasl;dx = F(y&frasl;x) </td><td>Set y = ux, then solve by separation of variables in u and x.</td><td>In(Cx)= &#8747;<sup>y&frasl;x</sup> dλ &frasl;F(λ)-λ </td></tr><tr><td>First-order, separable , yM(xy) + xN(xy)dy&frasl;dx = 0 ,yM(xy)dx + xN(xy)dy = 0  </td><td>Separation of variables (divide by xy).</td><td>In(Cx) = &#8747;<sup>xy</sup>N(λ)dλ&frasl;λ[N(λ)-M(λ)] ,if N = M, the solution is xy = C.</td></tr><tr><td>Exact Differential ,first order ,M(x,y)dy&frasl;dx + N(x,y) = 0 ,M(x,y)dy + N(x,y)dx = 0 , where ∂M&frasl;∂y  = ∂N&frasl;∂x</td><td>Integrate throughout.</td><td>F(x,y)=&#8747;<sup>x</sup>=M(λ,y)dλ +    
+   			 &frasl;<sup>x</sup>Y(λ)dλ = &#8747;<sup>y</sup>=N(x,λ)dλ + &frasl;<sup>y</sup>X(λ)dλ = C</td></tr><tr><td>Inexact Differential ,first order ,M(x,y)dy&frasl;dx + N(x,y) = 0 ,M(x,y)dy + N(x,y)dx = 0 , where ∂M&frasl;∂y  is not equal to ∂N&frasl;∂x</td><td>Integrate factor μ(x,y) satisfying ∂(μM)&frasl; ∂y =∂(Nμ)&frasl;∂x .</td><td> if μ(x,y) can be found in a suitable way,then ,  F(x,y)=&#8747;<sup>x</sup>=μ(λ,y) M(λ,y)dλ + &frasl;<sup>y</sup>Y(λ)dλ = &#8747;<sup>y</sup> = μ(x,λ)N(x,λ)dλ + &frasl;<sup>x</sup>X(λ)dλ = C</td></tr>
+   		</tbody>
+   		
+   	</table>
+   </center>
+
+    <center>
+   	<table>
+   		<caption>General Second - Order Equations</caption>
+   		<thead>
+   			<tr><th>Differential Equation </th><th>Solution Method</th><th>General Solution</th></tr>
+   		</thead>
+   		<tbody>
+   			<tr><td>Second-order, autonomous, dy<sup>2</sup> &frasl;dx<sup>2</sup> = F(y) </td><td>Multiply Both sides of equation by 2dy &frasl;dx,substitute  2dy &frasl;dx (d<sup>2</sup>dx<sup>2</sup>)=d&frasl;dx (dy&frasl;dx)<sup>2</sup>,then integrate twice </td><td>x = +- &#8747;<sup>y</sup>dλ &frasl; &#8730;2&#8747<sup>&lambda;F(&epsilon;)d&epsilon;+C<sub>1</sub> + C<sub>2</sub> </sup> </td></tr>
+   		</tbody>
+   		
+   	</table>
+   </center>
+
+    <center>
+   	<table>
+   		<caption>Linear to the nth-Order Equations </caption>
+   		<thead>
+   			<tr><th>Differential Equation </th><th>Solution Method</th><th>General Solution</th></tr>
+   		</thead>
+   		<tbody>
+   			<tr><td>First-order,linear, homogeneous ,function coefients , dy&frasl;dx + P(x)y = Q(x) </td><td>Integrating factor: e<sup>&#8747;<sup>x </sup>P(&lambda;)d&lambda;</sup> .</td><td>y= e <sup>-&frasl;<sup>x</sup>P(&lambda;)d&lambda;</sup>[&#8747;<sup>x</sup>e<sup>&#8747;<sup>&lambda; </sup>P(&epsilon;)d&epsilon;</sup>Q(&lambda;)d&lambda;+C] </td></tr><tr><td>Second-order,linear, inhomogeneous,function coefficients ,d<sup>2</sup>y&frasl;dx<sup>2</sup>+ 2p(x)dy&frasl;dx+(p(x)<sup>2</sup>+p<sup>`</sup>(x))y = q(x) </td><td>Integrating factor: e<sup>&#8747;<sup>x </sup>P(&lambda;)d&lambda;</sup> </td><td>y= e <sup>-&frasl;<sup>x</sup>P(&lambda;)d&lambda;</sup>[&#8747;<sup>x</sup>e<sup>&#8747;<sup>&lambda; </sup>P(&epsilon;)d&epsilon;</sup>Q(&lambda;)d&epsilon;+C<sub>1</sub>x + C<sub>2</sub>].</td></tr><tr><td>Second-order,linear, inhomogeneous,constant coefficients ,d<sup>2</sup>y&frasl;dx<sup>2</sup>+ bdy&frasl;dx + cy = r(x)</td><td>Complementary function y<sub>c</sub>:assume y<sub>c</sub>e<sup>ax</sup>, substitute and solve polynomial in &#593;, oto find the linearly indepedent functions e<sup>&#593;</sup>j<sup>x</sup>.Particular integral y<sub>p</sub>:in general the method of variation of parameters though for very simple r(x) inspection may work. </td><td>y = y<sub>c</sub>+ y<sub>p</sub>, if then b<sup>2</sup>&#60; 4c , then y<sup>c</sup>=C<sub>1</sub>e<sup>-x&frasl;(b + &#8730;b<sup>2</sup>-4c) </sup>+ C<sub>2</sub>e<sup>-x&frasl;(b - &#8730;b<sup>2</sup>-4c), if then b<sup>2</sup>=4c,then y<sub>c</sub>(C<sub>1</sub>x+C<sub>2</sub>) e<sup>-bx&frasl;2,  if then b <sup>2</sup>&gt; 4c,then y<sub>c</sub>[C<sub>1</sub>sin (x&#8730;4c-b<sup>2</sup>&frasl;2 ) +C<sub>2</sub>cos(x&#8730;4c-b<sup>2</sup>&frasl;2)] e<sup>-bx&frasl;2</td></tr><tr><td>nth-order, linear, inhomogeneous, constant coefficients &#8721; bj d<sup>j</sup>y&frasl;dx<sup>j</sup>=r(x) </td><td>Complementary function y<sub>c</sub>:assume y<sub>c</sub>e<sup>ax</sup>, substitute and solve polynomial in &#593;, oto find the linearly indepedent functions e<sup>&#593;</sup>j<sup>x</sup>.Particular integral y<sub>p</sub>:in general the method of variation of parameters though for very simple r(x) inspection may work.</td><td>y = y<sub>c</sub>+ y<sub>p</sub>, Since &#593;<sub>j</sub> are the solutions of the polynomial of degree n:&#8508;<sup>n</sup><sub>j=1</sub>(&#593; - &#593;<sub>j</sub>)=0 then: for &#593;<sub>j</sub> all diffent, y<sub>c</sub>=  &#8721; ( &#8721;^k<sub>j</sub>C<sub>jil</sub>x<sup>l-1</sup>)e<sup>&#593;<sub>j</sub>x</sup>for some &#593;<sub>j</sub>  complex, then settings &#593; = X<sub>j</sub>+Y<sub>j</sub>,and using Eulers formula, allows some terms in the previous results to be written in the form C<sub>j</sub>e<sup>&#593;<sub>j</sub>x </sup> = C<sub>j</sub>e<sup>X<sub>j</sub>x </sup>cos(&#916;<sub>j</sub>+&#915;<sub>j</sub>) , where ϕ<sub>j</sub> is an arbitrary constant (phase shift).  </td></tr>
+   		</tbody>
+   		
+   	</table>
+   </center>
+
+</font>
+</body>
+</body>
+</html>
